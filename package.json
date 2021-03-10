@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node esbuild.config.js",
+    "build": "NODE_ENV=production node esbuild.config.js",
+    "serve": "python3 -m http.server --directory ./build/"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "babel-preset-solid": "^0.24.13",
+    "concurrently": "^6.0.0",
+    "esbuild": "^0.9.0",
+    "esbuild-plugin-babel": "^0.2.3",
+    "solid-js": "^0.24.13"
+  }
+}
